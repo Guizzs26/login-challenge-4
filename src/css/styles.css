@@ -52,8 +52,18 @@ body {
 }
 
 /* Reusable */
+
 span {
   color: var(--brand-color);
+}
+
+.forgot-password:hover span,
+.forgot-password:active span,
+.sign-up-link:hover span,
+.sign-up-link:active span {
+  transition: all 3s;
+
+  color: var(--shade-color);
 }
 
 /*******************/
@@ -194,7 +204,8 @@ span {
   line-height: 17.41px;
 }
 
-.forgot-password {
+.forgot-password:link,
+.forgot-password:visited {
   font-size: 1.6rem;
   font-weight: 500;
   text-decoration: none;
