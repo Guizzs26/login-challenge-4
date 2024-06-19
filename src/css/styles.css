@@ -6,6 +6,7 @@
 
 :root {
   --brand-color: #1e9e6a;
+  --tint-color: #f3fff2;
 
   --dark: #1a202c;
 
@@ -31,5 +32,39 @@ html {
 }
 
 body {
+  height: 100vh;
+
   font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  display: flex;
+}
+
+/* General Layout */
+
+.right,
+.left {
+  width: 50%;
+}
+
+/* Left Container layout */
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--tint-color);
+}
+
+/* Left Container Content Styles */
+
+.box-img {
+  max-width: 100%;
+}
+
+.login-img {
+  width: 100%;
+  height: auto;
 }
