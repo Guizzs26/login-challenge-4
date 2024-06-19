@@ -19,7 +19,7 @@
 ## Learning 🧠
 
 > This project aimed to create a login interface inspired by a design project in Figma. Through this project, I enhanced my skills in creating layouts using semantic HTML, styling with CSS and employing flexbox layout effectively.
-
+> I also improved the use of effects such as transition hover and scale to improve the styling of buttons and links.
 > Another significant aspect of this project was implementing a responsive design suitable for tablet and mobile screens.
 
 ## Stack 🛠️
