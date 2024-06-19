@@ -39,6 +39,8 @@ body {
   line-height: 1;
 
   display: flex;
+
+  color: var(--dark);
 }
 
 /* General Layout */
@@ -47,6 +49,15 @@ body {
 .left {
   width: 50%;
 }
+
+/* Reusable */
+span {
+  color: var(--brand-color);
+}
+
+/*******************/
+/* LEFT CONTAINER */
+/*****************/
 
 /* Left Container layout */
 
@@ -67,4 +78,219 @@ body {
 .login-img {
   width: 100%;
   height: auto;
+}
+
+/********************/
+/* RIGHT CONTAINER */
+/******************/
+
+/* Form Layout */
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 40rem;
+}
+
+/* form-text Layout */
+
+.form-text-box {
+  width: 34.4rem;
+  height: 6.9rem;
+
+  margin-bottom: 4rem;
+}
+
+/* form-text Content Styles */
+
+.form-subheading {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 21.76px;
+
+  margin-bottom: 1.2rem;
+}
+
+.form-heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 34.82px;
+}
+
+/* Form Login Styles */
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Email and Password Layout and Content Styles */
+
+/* Layout */
+
+.form-email-password-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Content Styles */
+
+.input-text-label {
+  font-size: 1.8rem;
+  line-height: 19.58px;
+}
+
+.login-form-input {
+  width: 100%;
+
+  padding: 1.6rem;
+  border: 1px solid var(--gray-20);
+  border-radius: 4px;
+
+  background-color: var(--gray-30);
+}
+
+.login-form-input::placeholder {
+  font-size: 1.6rem;
+  line-height: 17.41px;
+
+  color: var(--gray-10);
+}
+
+/* Form Options Layout and Content Styles */
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 5.6rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.input-checkbox-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 17.41px;
+}
+
+.forgot-password {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 17.41px;
+}
+
+input[type="checkbox"] {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid var(--gray-20);
+  border-radius: 50%;
+
+  position: relative;
+
+  cursor: pointer;
+
+  background-color: var(--gray-30);
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid var(--brand-color);
+
+  background-color: var(--brand-color);
+}
+
+input[type="checkbox"]:checked::after {
+  width: 0.8rem;
+  height: 0.8rem;
+
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background-color: var(--white);
+}
+
+/* Buttons Layout and Content Styles */
+
+.form-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 19.58px;
+
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 4px;
+
+  color: var(--white);
+}
+
+.enter-btn {
+  background-color: var(--brand-color);
+}
+
+.google-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin-bottom: 6.4rem;
+
+  background-color: var(--dark);
+}
+
+.google-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* Sign Up Layout and Content Styles */
+
+.sign-up {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 21.76px;
+
+  text-align: center;
+}
+
+.sign-up-link:link,
+.sign-up-link:visited {
+  text-decoration: none;
 }
